@@ -139,7 +139,7 @@ app.get('/',(req,res)=>{
     res.send('This is from node express');
 });
 
-
-app.listen(5000,()=>{
+const port = process.env.PORT || 5000;
+app.listen(port,()=>{
     console.log("Listening at 5000");
 })
